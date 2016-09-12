@@ -10,7 +10,26 @@
     tools:context="co.zero.locationapp.MainActivity">
 
     <TextView
+        android:id="@+id/label_longitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Longitude:" />
+    <TextView
+        android:id="@+id/value_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/label_longitude"/>
+
+    <TextView
+        android:id="@+id/label_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude:"
+        android:layout_below="@id/label_longitude"/>
+    <TextView
+        android:id="@+id/value_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/label_latitude"
+        android:layout_below="@id/value_longitude"/>
 </RelativeLayout>
