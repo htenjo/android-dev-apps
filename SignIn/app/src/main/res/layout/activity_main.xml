@@ -11,7 +11,37 @@
     tools:context="co.zero.signin.MainActivity">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="SignIn in Hello World!" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btn_signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sing Out"
+        android:layout_below="@id/btn_signin"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btn_revoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Revoke Access"
+        android:layout_below="@id/btn_signout"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waiting ..."
+        android:layout_alignParentRight="true"/>
 </RelativeLayout>
